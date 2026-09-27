@@ -1,0 +1,984 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Riyaz Turns 18 🎉</title><style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080812;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+    position:relative;
+}
+
+/* ---------- INTRO ---------- */
+
+#intro{
+    background:
+        radial-gradient(circle at 20% 20%,#ff008055,transparent 30%),
+        radial-gradient(circle at 80% 80%,#00d9ff44,transparent 30%),
+        linear-gradient(135deg,#080812,#160025);
+}
+
+.intro-content{
+    max-width:750px;
+}
+
+.warning{
+    font-size:70px;
+    animation:shake 1.2s infinite;
+}
+
+@keyframes shake{
+
+    0%,100%{
+        transform:rotate(0);
+    }
+
+    25%{
+        transform:rotate(-8deg);
+    }
+
+    75%{
+        transform:rotate(8deg);
+    }
+}
+
+h1{
+    font-size:clamp(42px,10vw,85px);
+    margin:20px 0;
+}
+
+.gradient{
+    background:
+        linear-gradient(
+            90deg,
+            #ff2d95,
+            #ffd166,
+            #00e5ff,
+            #a855f7
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    animation:gradient 5s linear infinite;
+}
+
+@keyframes gradient{
+
+    to{
+        background-position:300%;
+    }
+
+}
+
+.subtitle{
+    font-size:22px;
+    line-height:1.6;
+}
+
+.start{
+    margin-top:30px;
+    padding:18px 35px;
+    border:none;
+    border-radius:50px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff007a,
+            #8b2cff
+        );
+
+    box-shadow:
+        0 0 35px #ff007a88;
+
+    transition:.3s;
+}
+
+.start:hover{
+    transform:scale(1.08);
+}
+
+.note{
+    margin-top:20px;
+    opacity:.6;
+    font-size:14px;
+}
+
+/* ---------- COMMON ---------- */
+
+.content{
+    width:100%;
+    max-width:850px;
+}
+
+.next{
+    margin-top:30px;
+    padding:15px 28px;
+    border:0;
+    border-radius:50px;
+    color:white;
+    background:#ffffff18;
+    border:1px solid #ffffff40;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.next:hover{
+    transform:translateY(-4px);
+}
+
+/* ---------- UPDATE ---------- */
+
+#update{
+    background:
+        radial-gradient(circle,#302060,#090914 70%);
+}
+
+.computer{
+    font-size:80px;
+}
+
+.progress{
+    width:min(500px,90%);
+    height:16px;
+    margin:30px auto 15px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#222;
+}
+
+.progress-bar{
+    width:0%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00e5ff,
+            #ff2d95
+        );
+
+    transition:width .5s;
+}
+
+.status{
+    color:#00ff9d;
+    font-size:17px;
+}
+
+/* ---------- AGE ---------- */
+
+#age{
+    background:
+        linear-gradient(
+            135deg,
+            #ff007a,
+            #6d28d9,
+            #111827
+        );
+}
+
+.card{
+    padding:40px 25px;
+    border-radius:30px;
+
+    background:#ffffff12;
+
+    border:1px solid #ffffff35;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 20px 70px #0008;
+}
+
+.big18{
+    font-size:clamp(110px,28vw,210px);
+    font-weight:900;
+    line-height:.8;
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff2d95,
+            #ffd166,
+            #00e5ff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    background-size:300%;
+
+    animation:gradient 3s infinite;
+}
+
+.name{
+    color:#ffd166;
+    font-size:clamp(25px,6vw,45px);
+    font-weight:bold;
+    margin:25px 0;
+}
+
+/* ---------- PHOTO ---------- */
+
+#photo{
+    background:#111827;
+}
+
+.photo{
+    width:min(340px,85vw);
+    height:min(450px,65vh);
+
+    margin:25px auto;
+
+    border-radius:25px;
+    overflow:hidden;
+
+    border:4px solid #ffd166;
+
+    box-shadow:
+        0 0 45px #ffd16666;
+
+    transform:rotate(-2deg);
+
+    transition:.5s;
+}
+
+.photo:hover{
+    transform:rotate(0) scale(1.03);
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.secret{
+    display:inline-block;
+    padding:8px 15px;
+
+    border:2px solid #ff4567;
+
+    color:#ff4567;
+
+    font-weight:bold;
+
+    transform:rotate(-4deg);
+}
+
+/* ---------- REPORT ---------- */
+
+#report{
+    background:
+        radial-gradient(
+            circle,
+            #3b0764,
+            #090914 70%
+        );
+}
+
+.report-box{
+    text-align:left;
+
+    background:#111;
+
+    border:1px solid #444;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 60px #000;
+}
+
+.report-box h2{
+    color:#00ff9d;
+    margin-bottom:20px;
+}
+
+.report-box p{
+    line-height:1.7;
+    margin:12px 0;
+}
+
+.red{
+    color:#ff4d6d;
+}
+
+.green{
+    color:#00ff9d;
+}
+
+/* ---------- FINAL ---------- */
+
+#final{
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            #ff007a55,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            #00e5ff44,
+            transparent 30%
+        ),
+
+        #080812;
+}
+
+.gift{
+    font-size:110px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+}
+
+.final18{
+    font-size:clamp(130px,30vw,250px);
+    font-weight:900;
+    line-height:.8;
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff2d95,
+            #ffd166,
+            #00e5ff,
+            #a855f7
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    animation:gradient 3s infinite;
+}
+
+.message{
+    max-width:700px;
+    margin:25px auto;
+
+    font-size:clamp(19px,4vw,28px);
+
+    line-height:1.6;
+}
+
+/* ---------- MUSIC BUTTON ---------- */
+
+.music-button{
+    position:fixed;
+
+    right:18px;
+    top:18px;
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    border:1px solid #ffffff40;
+
+    background:#ffffff18;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    z-index:1000;
+}
+
+/* ---------- CONFETTI ---------- */
+
+.confetti{
+    position:fixed;
+
+    top:-20px;
+
+    width:9px;
+    height:14px;
+
+    z-index:2000;
+
+    animation:
+        fall 3s linear forwards;
+}
+
+@keyframes fall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+    }
+
+}
+
+/* ---------- FLOATING EMOJIS ---------- */
+
+.float{
+    position:fixed;
+
+    bottom:-50px;
+
+    font-size:30px;
+
+    z-index:100;
+
+    pointer-events:none;
+
+    animation:
+        floatUp 6s linear forwards;
+}
+
+@keyframes floatUp{
+
+    to{
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    section{
+        padding:70px 15px;
+    }
+
+    .card{
+        padding:30px 18px;
+    }
+
+    .report-box{
+        padding:22px;
+    }
+
+}
+
+</style></head><body><!-- MUSIC --><audio id="music" loop preload="auto">
+    <source src="123.mp3" type="audio/mpeg">
+</audio><!-- MUSIC BUTTON --><button
+class="music-button"
+onclick="toggleMusic()"
+id="musicButton">
+
+🎵
+
+</button><!-- ================= INTRO ================= --><section id="intro"><div class="intro-content"><div class="warning">
+🚨
+</div><p>
+IMPORTANT SYSTEM NOTIFICATION
+</p><h1 class="gradient">
+Riyaz.exe
+</h1><p class="subtitle">A major software update has been detected.
+
+<br><br>
+
+<b>
+Riyaz is turning 18.
+</b></p><button
+class="start"
+onclick="startBirthday()">
+
+⚡ START THE SURPRISE
+
+</button><p class="note">👆 Tap to start the birthday experience + music
+
+</p></div></section><!-- ================= UPDATE ================= --><section id="update"><div class="content"><div class="computer">
+💻
+</div><h1>
+Installing Version 18.0
+</h1><div class="progress"><div
+    class="progress-bar"
+    id="bar">
+</div></div><p
+    class="status"
+    id="status">Preparing birthday files...
+
+</p></div></section><!-- ================= AGE ================= --><section id="age"><div class="content card"><p>
+UPDATE SUCCESSFUL ✅
+</p><div class="big18">
+18
+</div><div class="name">
+PH Mohammad Riyaz
+</div><p style="font-size:20px;line-height:1.7">Congratulations! 😂
+
+<br>You have officially unlocked:
+
+<br><br>
+
+<b>
+ADULT MODE™
+</b><br><br>
+
+Responsibility installation:
+<br>
+
+<span style="color:#ff4d6d">
+FAILED ❌
+</span></p><button
+class="next"
+onclick="scrollToSection('photo')">
+
+Continue 🔍
+
+</button></div></section><!-- ================= PHOTO ================= --><section id="photo"><div class="content"><div class="secret">
+TOP SECRET
+</div><h1 class="gradient">
+THE 18-YEAR-OLD
+</h1><div class="photo"><img
+src="1234.jpg"
+alt="PH Mohammad Riyaz">
+
+</div><p style="font-size:20px">
+Subject identified successfully. 🕵️
+</p><p style="opacity:.6">
+Birthday department evidence acquired.
+</p><button
+class="start"
+onclick="scrollToSection('report')">
+
+VIEW CLASSIFIED REPORT 📁
+
+</button></div></section><!-- ================= REPORT ================= --><section id="report"><div class="content"><div class="report-box"><h2>
+🕵️ CLASSIFIED RIYAZ REPORT
+</h2><p>
+<b>Name:</b>
+PH Mohammad Riyaz
+</p><p>
+<b>Age:</b>
+<span class="green">
+18
+</span>
+</p><p>
+<b>Status:</b>
+<span class="green">
+Birthday Mode Activated
+</span>
+</p><p>
+<b>Brain:</b>
+<span class="red">
+Still Loading...
+</span>
+😂
+</p><p>
+<b>Responsibility:</b>
+<span class="red">
+Not Found
+</span>
+</p><p>
+<b>Fun Level:</b>
+<span class="green">
+100%
+</span>
+</p><p>
+<b>Official Diagnosis:</b>
+Too old to say "I'm just a kid." 😭
+</p></div><button
+class="start"
+onclick="scrollToSection('final')">
+
+OPEN FINAL SURPRISE 🎁
+
+</button></div></section><!-- ================= FINAL ================= --><section id="final"><div class="content"><div class="gift">
+🎁
+</div><div class="final18">
+18
+</div><h1 class="gradient">
+HAPPY BIRTHDAY!
+</h1><div class="name">
+PH Mohammad Riyaz ❤️
+</div><div class="message">🎂 Welcome to Chapter 18! 🎉
+
+<br><br>
+
+May your life be filled with
+great friends, crazy memories,
+success, happiness and
+countless reasons to smile.
+
+<br><br>
+
+Keep laughing.
+<br>
+Keep dreaming.
+<br>
+Keep making memories.
+
+<br><br>
+
+<b>
+HAVE AN AMAZING 18TH BIRTHDAY! 🥳🔥
+</b></div><button
+class="start"
+onclick="celebrate()">
+
+🎉 CELEBRATE!
+
+</button></div></section><script>
+
+/* MUSIC */
+
+const music =
+document.getElementById("music");
+
+const musicButton =
+document.getElementById("musicButton");
+
+
+/* START EVERYTHING */
+
+function startBirthday(){
+
+    /*
+    The click on this button counts as
+    user interaction, so Chrome allows
+    the music to start.
+    */
+
+    music.volume=0.7;
+
+    music.play()
+    .then(function(){
+
+        musicButton.innerText="🔊";
+
+    })
+    .catch(function(){
+
+        console.log(
+            "Browser blocked autoplay."
+        );
+
+    });
+
+
+    /* Move to update section */
+
+    document
+        .getElementById("update")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+
+    /* Start fake update */
+
+    const bar =
+        document.getElementById("bar");
+
+    const status =
+        document.getElementById("status");
+
+
+    setTimeout(function(){
+
+        bar.style.width="25%";
+
+        status.innerText=
+        "Checking birthday records...";
+
+    },300);
+
+
+    setTimeout(function(){
+
+        bar.style.width="50%";
+
+        status.innerText=
+        "Detecting age increase...";
+
+    },900);
+
+
+    setTimeout(function(){
+
+        bar.style.width="75%";
+
+        status.innerText=
+        "Installing Chapter 18...";
+
+    },1500);
+
+
+    setTimeout(function(){
+
+        bar.style.width="100%";
+
+        status.innerText=
+        "Installation complete! 🎉";
+
+    },2200);
+
+
+    setTimeout(function(){
+
+        document
+            .getElementById("age")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+        confetti();
+
+    },3000);
+
+}
+
+
+/* SCROLL */
+
+function scrollToSection(id){
+
+    document
+        .getElementById(id)
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* MUSIC BUTTON */
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play()
+        .then(function(){
+
+            musicButton.innerText="🔊";
+
+        });
+
+    }else{
+
+        music.pause();
+
+        musicButton.innerText="🎵";
+
+    }
+
+}
+
+
+/* CONFETTI */
+
+function confetti(){
+
+    const colors=[
+        "#ff2d95",
+        "#ffd166",
+        "#00e5ff",
+        "#7cff6b",
+        "#a855f7",
+        "#ffffff"
+    ];
+
+
+    for(
+        let i=0;
+        i<120;
+        i++
+    ){
+
+        const piece =
+            document.createElement("div");
+
+        piece.className=
+            "confetti";
+
+        piece.style.left=
+            Math.random()*100+"vw";
+
+        piece.style.background=
+            colors[
+                Math.floor(
+                    Math.random()*colors.length
+                )
+            ];
+
+        piece.style.animationDuration=
+            (2+Math.random()*2)+"s";
+
+        piece.style.animationDelay=
+            Math.random()+"s";
+
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(function(){
+
+            piece.remove();
+
+        },5000);
+
+    }
+
+}
+
+
+/* FLOATING EMOJIS */
+
+function createEmoji(){
+
+    const emojis=[
+        "🎈",
+        "🎉",
+        "🥳",
+        "🎂",
+        "😂",
+        "🔥",
+        "❤️",
+        "✨",
+        "🎁",
+        "🤣"
+    ];
+
+
+    const e =
+        document.createElement("div");
+
+    e.className="float";
+
+    e.innerText=
+        emojis[
+            Math.floor(
+                Math.random()*emojis.length
+            )
+        ];
+
+    e.style.left=
+        Math.random()*100+"vw";
+
+    e.style.animationDuration=
+        (4+Math.random()*4)+"s";
+
+
+    document.body.appendChild(e);
+
+
+    setTimeout(function(){
+
+        e.remove();
+
+    },8000);
+
+}
+
+
+/* FINAL CELEBRATION */
+
+function celebrate(){
+
+    confetti();
+
+    setTimeout(confetti,500);
+    setTimeout(confetti,1000);
+    setTimeout(confetti,1500);
+
+    for(
+        let i=0;
+        i<25;
+        i++
+    ){
+
+        setTimeout(
+            createEmoji,
+            i*100
+        );
+
+    }
+
+}
+
+
+/* EXTRA FLOATING EMOJIS */
+
+setInterval(function(){
+
+    const finalSection =
+        document.getElementById("final");
+
+    const rect =
+        finalSection.getBoundingClientRect();
+
+    if(
+        rect.top < window.innerHeight &&
+        rect.bottom > 0
+    ){
+
+        createEmoji();
+
+    }
+
+},800);
+
+</script></body>
+</html>
